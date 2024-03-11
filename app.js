@@ -6,8 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-const databaseurl = 'mongodb+srv://pranavpadmakarjoshi8999:ylpH6svui2jn87H6@cluster0.omtdsxk.mongodb.net/testDB?retryWrites=true&w=majority'
-
+const databaseurl = 'mongodb+srv://test:UHWXOFlqW9M1EWrE@cluster0.omtdsxk.mongodb.net/testDB'
 mongoose.connect(databaseurl);
 let database = mongoose.connection;
 database.on('connected',()=> {
